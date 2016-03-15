@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B686339D1C97E33C00040264 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B686339C1C97E33C00040264 /* MD5.swift */; };
 		B6C93AC11C9555D000C0AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C93AC01C9555D000C0AFF9 /* AppDelegate.swift */; };
 		B6C93AC31C9555D000C0AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C93AC21C9555D000C0AFF9 /* ViewController.swift */; };
 		B6C93AC61C9555D000C0AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C93AC41C9555D000C0AFF9 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B686339C1C97E33C00040264 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		B686339F1C97E39400040264 /* livetv-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "livetv-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6C93ABD1C9555D000C0AFF9 /* livetv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = livetv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C93AC01C9555D000C0AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6C93AC21C9555D000C0AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				B6C93AC71C9555D000C0AFF9 /* Assets.xcassets */,
 				B6C93AC91C9555D000C0AFF9 /* LaunchScreen.storyboard */,
 				B6C93ACC1C9555D000C0AFF9 /* Info.plist */,
+				B686339C1C97E33C00040264 /* MD5.swift */,
+				B686339F1C97E39400040264 /* livetv-Bridging-Header.h */,
 			);
 			path = livetv;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			files = (
 				B6C93AC31C9555D000C0AFF9 /* ViewController.swift in Sources */,
 				B6C93AC11C9555D000C0AFF9 /* AppDelegate.swift in Sources */,
+				B686339D1C97E33C00040264 /* MD5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = livetv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lysns.livetv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "livetv/livetv-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,10 +420,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = livetv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lysns.livetv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "livetv/livetv-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +496,7 @@
 				B6C93AE71C9555D000C0AFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6C93AE81C9555D000C0AFF9 /* Build configuration list for PBXNativeTarget "livetvTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +505,7 @@
 				B6C93AEA1C9555D000C0AFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6C93AEB1C9555D000C0AFF9 /* Build configuration list for PBXNativeTarget "livetvUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +514,7 @@
 				B6C93AED1C9555D000C0AFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
